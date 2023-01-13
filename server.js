@@ -12,6 +12,8 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!!!');
 
+rollbar.log('work plz');
+
 app.use(express.static(`${__dirname}/public`));
 
 app.listen(4000, () => console.log('up on 4000'));
